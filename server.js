@@ -30,6 +30,7 @@ mongodb.MongoClient.connect(mongoUri, function(error, database) {
         let messageObject = {
             lamp: fixedMessage.lamp,
             verwarming: fixedMessage.verwarming,
+            alarm: fixedMessage.alarm,
             bewegingssensor: fixedMessage.bewegingssensor,
             tempsensor: fixedMessage.tempsensor,
             timestamp: Date.now()
