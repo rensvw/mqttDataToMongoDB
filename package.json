@@ -1,7 +1,7 @@
 {
     "name": "mqttDataToMongoDB",
     "description": "This NodeJS application listens to MQTT messages and records them to MongoDB",
-    "author": "",
+    "author": "Rens van Woudenberg",
     "license": "MIT",
     "version": "1.0.0",
     "dependencies": {
