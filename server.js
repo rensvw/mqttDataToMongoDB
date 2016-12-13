@@ -31,7 +31,7 @@ mongodb.MongoClient.connect(mongoUri, function(error, database) {
             lamp: fixedMessage.lamp,
             verwarming: fixedMessage.verwarming,
             alarm: fixedMessage.alarm,
-            bewegingssensor: fixedMessage.bewegingssensor,
+            lightsensor: fixedMessage.lightsensor,
             tempsensor: fixedMessage.tempsensor,
             timestamp: Date.now()
         };
