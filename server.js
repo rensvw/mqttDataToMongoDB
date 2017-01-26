@@ -29,11 +29,13 @@ mongodb.MongoClient.connect(mongoUri, function(error, database) {
         let fixedMessage = JSON.parse(message.toString().replace(/\'/g, '\"'));
         let messageObject = {
             lamp: fixedMessage.lamp,
-            verwarming: fixedMessage.verwarming,
-            alarm: fixedMessage.alarm,
-            lightsensor: fixedMessage.lightsensor,
-            tempsensor: fixedMessage.tempsensor,
-            timestamp: Date.now()
+            heating: fixedMessage.heating,
+            movingSensor: fixedMessage.movingSensor,
+            doorSensor: fixedMessage.doorSensor,
+            windowSensor: fixedMessage.windowSensor,
+            tempSensor: fixedMessage.tempSensor,
+            lightSensor: fixedMessage.lightSensor,
+            createdAt: Date.now()
         };
         collection.insert(messageObject, function(error, result) {
             if (error != null) {
